@@ -23,4 +23,4 @@ for dirname in dirs:
   open(zip_filepath, "wb").write(res.content)
   with zipfile.ZipFile(zip_filepath) as zip_ref:
     zip_ref.extractall(path.join(MAIN_DIR, dirname))
-    os.remove(zip_filepath)
+  os.remove(zip_filepath)
